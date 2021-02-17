@@ -70,3 +70,5 @@ CONSTRAINT CompKey_ID_NAME_1 PRIMARY KEY (Student_ID, Student_name));
 
 Scafolding command
 Scaffold-DbContext -Connection Name=EmployeeDB Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+
+Scaffold-DbContext "Server=.\;Database=EmployeeDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
