@@ -65,3 +65,8 @@ Student_name varchar(255) NOT NULL,
 City varchar(255),
 Marks int
 CONSTRAINT CompKey_ID_NAME_1 PRIMARY KEY (Student_ID, Student_name));
+
+
+
+Scafolding command
+Scaffold-DbContext -Connection Name=EmployeeDB Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
